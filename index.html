@@ -15,10 +15,12 @@
     <!-- =========================== ICONS =========================== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- =========================== SWIPER CSS =========================== -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+    <!-- =========================== TAB ICON =========================== -->
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
 
-    <title>Cheeze's Portfolio</title>
+    <!-- =========================== SWIPER CSS =========================== -->
+
+    <title>Nongnaphat Wongpiyachai | Portfolio</title>
 </head>
 <body>
 
@@ -48,12 +50,12 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                        <a href="#portfolio" class="nav-link">Project</a>
                     </li>
 
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
-                    </li> -->
+                    </li>
                 </ul>
                 
                 <!-- nav close -->
@@ -94,9 +96,10 @@
 
                     <!-- social icons -->
                     <ul class="social-icons">
-                        <li><a href="https://www.instagram.com/cheezevava/"><i class="lni lni-instagram-original"></i></a></li>
+                        <!-- <li><a href="https://www.instagram.com/cheezevava/"><i class="lni lni-instagram-original"></i></a></li> -->
                         <li><a href="https://www.linkedin.com/in/cheezetsu"><i class="lni lni-linkedin"></i></a></li>
                         <li><a href="https://github.com/cheezetsu"><i class="lni lni-github"></i></a></li>
+                        <li><a href="mailto:nongnaphat.wongp@dome.tu.ac.th"><i class="lni lni-envelope"></i></a></li>
                     </ul>
 
                     <!-- button -->
@@ -145,13 +148,18 @@
                                         <!-- skill item -->
                                         <div class="skill-item">
                                             <h4>Technical skills</h4>
-                                            <span>Python, Scala, Java, Javascript, SQL, C, C++, HTML, CSS,  PHP</span>
+                                            <span>
+                                                <span>&#9679; Strong: Python, Java, SQL, HTML, CSS, PHP</span>
+                                                <br>
+                                                <span>&#9679; Scala, R, Javascript, C, C++</span>
+
+                                            </span>
                                         </div>
 
                                         <!-- skill item -->
                                         <div class="skill-item">
                                             <h4>Languages skills</h4>
-                                            <span>Thai (Native), English (Proficient), Korean (Basic)</span>
+                                            <span>Thai (Native), English (Proficient), Korean (Elementary)</span>
                                         </div>
 
                                         <!-- skill item -->
@@ -208,7 +216,8 @@
                                             <i class="lni lni-calendar"></i> Aug 2020 - present
                                         </h3>
 
-                                        <h3 class="timeline-title">Computer Science, BS</h3>
+                                        <h3 class="timeline-title">Bachelor of Science Program in Computer Science,
+                                            Minor in Data Science</h3>
                                         <p class="timeline-text">Thammasat University | GPA 3.26</p>
 
                                         <br>
@@ -241,10 +250,7 @@
 
                                         <h3 class="timeline-title">Helpdesk Assistance / IT Support Intern <br>
                                            <span style="color: #808080; font-size: 1.05rem;">TU ICT | Thammasat University, Thailand</span></h3>
-                                        <p class="timeline-text">
-                                            <span>&#9679;</span> Categorize each IT issue
-                                            <br>
-                                            <span>&#9679;</span> Provide guidance on IT issues
+                                        <p class="timeline-text">Worked on Helpdesk Assistance / IT Support to categorize each IT issue and provide guidance on IT issues
                                         </p>    
                                     </div>
                                 </div>
@@ -259,14 +265,16 @@
          <section class="portfolio section" id="portfolio">
             <div class="container">
                 <!-- section title -->
-                <h2 class="section-title padd-15">Portfolio</h2>
+                <h2 class="section-title padd-15">Project</h2>
 
                 <div class="row">
                     <div class="portfolio-filter padd-15">
                         <div class="portfolio-filter-inner">
                             <button type="button" class="active" data-filter="all">All</button>
-                            <button type="button" data-filter="ml">Machine Learning / Data</button>
-                            <button type="button" data-filter="web">Website</button>
+                            <button type="button" data-filter="ml">Machine Learning</button>
+                            <button type="button" data-filter="web">Web Development</button>
+                            <button type="button" data-filter="data visualization">Data Visualization</button>
+                            <button type="button" data-filter="others">Others</button>
                         </div>
                     </div>
                 </div>
@@ -302,6 +310,41 @@
                                         <li><span>&#9679;</span> Dataset: <a href="https://www.kaggle.com/code/bandiatindra/telecom-churn-prediction/data"><span style="color: blue;"><u>https://www.kaggle.com/code/bandiatindra/telecom-churn-prediction/data</u></span></a></li> 
                                         <li><span>&#9679;</span> Tools Used: <span>Python</span></li>
                                         <li><span>&#9679;</span> Google Colab URL: <a href="https://colab.research.google.com/drive/1ovewHAby4qPeRpX1PFg_JnbP8ldeDWe6?usp=sharing"><span style="color: blue;"><u>https://colab.research.google.com/drive/1ovewHAby4qPeRpX1PFg_JnbP8ldeDWe6?usp=sharing</u></span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item: CrimeAgainstWomenInIndia -->
+                    <div class="portfolio-item padd-15" data-category="data visualization">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="CrimeAgainstWomenInIndia.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Data Visualization</span>
+                            <h3 class="portfolio-item-title">Crime Against Women In India</h3>
+                            <span class="more-button">&hellip;</span>
+
+                            <div class="portfolio-item-details">
+                                <div class="description">
+                                    <p>Crime against women in India is the data storytelling includes:
+
+                                        <br><span>&#8211; Trends in crimes against women in India, 2001 - 2014</span>
+                                        <br><span>&#8211; Top 10 states with the highest and lowest number of crime cases from 2001 to 2014</span>
+                                        <br><span>&#8211; The percentage of total crime rate in each criminal case in the capital city (DELHI) from 2001 to 2014</span>
+                                        <br><span>&#8211; Rape cases in India from 2001 to 2014</span>
+                                        <br><span>&#8211; Kidnapping and Abduction cases in India from 2001 to 2014</span>
+                                    </p>
+                                </div>
+
+                                <div class="general-info">
+                                    <ul>
+                                        <!-- <li><span>&#9679;</span> Role: <span>Front-end developer in Login page</span></li> -->
+                                        <li><span>&#9679;</span> Dataset: <a href="https://www.kaggle.com/datasets/greeshmagirish/crime-against-women-20012014-india"><span style="color: blue;"><u>https://www.kaggle.com/datasets/greeshmagirish/crime-against-women-20012014-india</u></span></a></li> 
+                                        <li><span>&#9679;</span> Tools Used: <span>Tableau</span></li>
+                                        <li><span>&#9679;</span> GitHub URL: <a href="https://github.com/cheezetsu/CrimeAgainstWomenInIndia.git"><span style="color: blue;"><u>https://github.com/cheezetsu/CrimeAgainstWomenInIndia.git</u></span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -458,8 +501,52 @@
 
          <!-- =========================== CONTACT =========================== -->
          <section class="contact section" id="contact">
+            <div class="container">
+                <!-- section title -->
+                <h2 class="section-title padd-15">Contact Me</h2>
+                <div class="row">
+                    <!-- contact box -->
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <!-- contact information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Phone</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-phone contact-icon"></i>
+                                    (+66) 92-653-4061
+                                </span>
+                            </div>
 
+                            <!-- contact information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Email</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-user contact-icon"></i>
+                                    nongnaphat.wongp@dome.tu.ac.th
+                                </span>
+                            </div>
+
+                            <!-- contact information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Address</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-home contact-icon"></i>
+                                    Bangkok, Thailand
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
          </section>
+
+         <!-- =========================== FOOTER =========================== -->
+         <section class="footer">
+            <div class="container padd-15">
+                <h4>Copyright <span>&#169;</span> 2023 Nongnaphat Wongpiyachai</h4>
+            </div>
+         </section>
+
 
     </main>
 

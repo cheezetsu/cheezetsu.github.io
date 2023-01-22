@@ -517,6 +517,51 @@ h3 {
     margin: var(--m-0-75) 0;
 }
 
+.slider {
+    height: 100px;
+    margin: auto;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+}
+
+.slider-track {
+    display: flex;
+    width: calc(100px * 40);
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100px * 20));
+    }
+}
+
+.slide {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.slide img {
+    width: 100%;
+}
+
+/* .slider::before, .slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+} */
+
 /* =========================== Portfolio =========================== */
 .portfolio .portfolio-filter {
     flex: 0 0 100%;
@@ -836,6 +881,19 @@ h3 {
     left: 0;
     z-index: 10;
     color: var(--color-secondary);
+}
+
+/* =========================== Footer =========================== */
+.footer .container {
+    background-color: var(--color-secondary);
+    max-width: 100%;
+    padding-bottom: 2rem;
+}
+
+.footer h4 {
+    color: var(--color-white);
+    float: right;
+    font-weight: var(--font-medium);
 }
 
 /* =========================== Customize Theme =========================== */
